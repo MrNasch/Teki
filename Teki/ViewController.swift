@@ -18,10 +18,10 @@ class ViewController: UIViewController {
     
     @IBAction func changeQuote() {
         let randomIndex1 = Int(arc4random_uniform(UInt32(celebrities.count)))
-        let celebrity = celebrities(randomIndex1)
+        let celebrity = celebrities[randomIndex1]
         
         let randomIndex2 = Int(arc4random_uniform(UInt32(activities.count)))
-        let activity = activities(randomIndex2)
+        let activity = activities[randomIndex2]
         
         let quote = "Tu es " + celebrity + " " + activity + " !"
         
